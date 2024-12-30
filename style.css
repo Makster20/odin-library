@@ -73,6 +73,19 @@ main .card button {
     cursor: pointer;
 }
 
+main .card .read {
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border: #9d5e17 3px solid;
+    border-radius: 4px;
+    padding-inline: 20px;
+    padding-block: 9px;
+    background-color: #9d5e17;
+    color: #ffe1be;
+    cursor: pointer;
+}
+
 main .card .delete{
     position: absolute;
     border: none;
@@ -89,4 +102,83 @@ main .card .delete{
 main .card .delete svg{
     width: 20px;
     height: 20px;
+}
+
+dialog{
+    text-align: center;
+    background-color: #ffe1be;
+    border: 4px solid #9d5e17;
+    border-radius: 5px;
+    color: #57340c;
+    padding: 4px 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+dialog h2{
+    font-size: 2.4rem;
+}
+
+dialog div {
+    display: flex;
+    align-items: center; /* Align labels and inputs vertically */
+    gap: 10px; /* Add space between the label and input */
+    margin-bottom: 20px;
+}
+
+dialog div label {
+    flex: 0 0 120px; /* Fixed width for labels */
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+dialog div input {
+    border-radius: 4px;
+    border: 2px solid #9d5e17;
+    padding: 6px;
+    font-size: 1.2rem;
+    color: #57340c;
+    font-weight: 600;
+    width: 300px;
+    outline: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+dialog button{
+    margin-top: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    padding-inline: 20px;
+    padding-block: 8px;
+    background-color: #9d5e17;
+    color: #ffecd6;
+    cursor: pointer;
+}
+
+dialog .check{
+    display: flex;
+    justify-content: center;
+}
+
+dialog input[type="checkbox"]{
+    accent-color: #9d5e17;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    margin: 0px 30px;
+}
+
+dialog .close{
+    position: absolute;
+    border: none;
+    top: 0px;
+    right: 20px;
+    border-radius: 4px;
+    padding-inline: 12px;
+    padding-block: 6px;
+    background-color: #a90808;
+    color: #ffecd6;
+    cursor: pointer;
 }
